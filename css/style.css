@@ -1,0 +1,75 @@
+@import url(https://allfont.ru/allfont.css?fonts=franklin-gothic-medium-cond);
+
+:root{
+    font-size: 20px;
+    --main-color: #E94E1B;
+    --dark-purple: #261334;
+    --light-orange:#EFCEB6;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Franklin Gothic Medium Cond', arial;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.firstscreen{
+    background: var(--main-color);
+    color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    width: 800px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    justify-content: space-between;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    background: url(../img/background_orange.png) center no-repeat;
+}
+
+
+.content-left button {
+    background-color: var(--dark-purple);
+    color: white;
+    border: none;
+    border-radius: 40px;
+
+    width: 220px;
+    height: 70px;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
