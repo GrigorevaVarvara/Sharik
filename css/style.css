@@ -296,3 +296,28 @@ form button{
     height: 50px;
     border-radius: 50px;
 }
+
+footer{
+    margin-top: 90px;
+    background: var(--dark-purple);
+    color: white;
+    font-size: 0.7rem;
+
+    padding-top: 80px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footlogo {
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
