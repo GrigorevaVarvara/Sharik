@@ -29,6 +29,11 @@ h2{
     align-items: center;
 }
 
+h3{
+    font-size: 1.6rem;
+    margin: 15px;
+}
+
 .container{
     width: 1200px;
     max-width: 100%;
@@ -166,76 +171,128 @@ header ul li a{
     font-size: 2rem;
 }
 
-.carousel {
-    margin: 0 auto;
-    position: relative;
+.withslider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-    .carousel .carousel-indicators {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 15;
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        list-style: none;
+
+#wrapper {
+    width: 4000px;
+    position: relative;
+    left: 0px;
+    transition: left .5s ease-in-out;
+}
+
+.slider {
+    float: left;
+    width: 920px;
+    height: 640px;
+    white-space: normal;
+    background-repeat: no-repeat;
+    padding-right: 60px;
+    margin: 0 auto;
+    text-align: center;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+#sliderContainer {
+    width: 920px;
+    height: 640px;
+    border-radius: 50px;
+    background: var(--dark-purple);
+    overflow: hidden;
+
+    margin-top: 70px;
+    padding: 30px;
+
+    color: white;
+
+    
+}
+
+#navLinks {
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    background-color: var(--light-orange);
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+    #navLinks ul {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        margin-top: 6px;
     }
-        .carousel .carousel-indicators li {
-            flex: 0 1 auto;
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
-            margin-left: 5px;
+        #navLinks ul li {
+            float: left;
+            text-align: center;
+            margin: 10px;
+            list-style: none;
             cursor: pointer;
-            background-color: #343a40;
-            border: 2px solid #fff;
+            background-color: white;
+            padding: 10px;
             border-radius: 50%;
         }
-        .carousel .carousel-indicators .active {
-            background-color: #025fff;
-        }
-    .carousel .carousel-window {
-        width: 100%;
-        height: 500px;
-        position: relative;
-        overflow: hidden;
-    }
-    .carousel .carousel-slides {
-        height: 100%;
-        display: flex;
-        transition: transform 0.5s;
-    }
-    .carousel .carousel-item {
-        height: 100%;
-    }
-        .carousel .carousel-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    .carousel .carousel-prev, .carousel .carousel-next {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 15%;
-        color: #fff;
-        opacity: 0.7;
-        text-align: center;
-        font-size: 40px;
-        text-decoration: none;
-    }
-    .carousel .carousel-prev:hover, .carousel .carousel-next:hover {
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-    .carousel .carousel-prev {
-        left: 0;
-    }
-    .carousel .carousel-next {
-        right: 0;
-    }
+            #navLinks ul li:hover {
+                background-color: var(--main-color);
+            }
+            #navLinks ul li.active {
+                background-color: var(--main-color);
+                color: #FFFFFF;
+                outline-width: 7px;
+            }
+                #navLinks ul li.active:hover {
+                    background-color: var(--main-color);
+                    color: #FFFFFF;
+                }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input{
+    width: 730px;
+    height: 70px;
+    margin: 20px;
+
+    border: none;
+    background: var(--light-orange);
+    border-radius: 65px;
+    padding-left: 95px;
+    color: var(--dark-purple);
+    font-size: 1.2rem;
+}
+
+textarea{
+    width: 730px;
+    height: 320px;
+    margin: 20px;
+
+    border: none;
+    background: var(--light-orange);
+    border-radius: 65px;
+    padding-left: 95px;
+    padding-top: 25px;
+    color: var(--dark-purple);
+    font-size: 1.2rem;
+}
+
+form button{
+    border: none;
+    background: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+}

@@ -80,28 +80,49 @@
     </div>
     <div class="container lowerscreen">
         <h2 class="txt_orange">ПРОЕКТЫ</h2>
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1623646230868-48e8e88b38e4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=720&ixlib=rb-1.2.1&q=80&w=1280" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1599636647429-8cbd70bead58?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=720&ixlib=rb-1.2.1&q=80&w=1280" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1622556474520-59904a30f654?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=720&ixlib=rb-1.2.1&q=80&w=1280" class="d-block w-100" alt="...">
+        <div class="withslider">
+            <div id="sliderContainer">
+                <div id="wrapper">
+                    <div id="itemOne" class="slider">
+                        <img src="img/slider/firstpic.png">
+                        <h3>ПРИКЛЮЧЕНИЯ ШАРИКА</h3>
+                        <p>Мультсериал рассказывает о приключениях щенка Шарика и его друзей. Присоединяйтесь к ним и узнавайте все занимательные и забавные истории через которые проходит  компания зверюшек.</p>
+                    </div>
+                    <div id="itemTwo" class="slider">
+                        <img src="img/slider/firstpic.png">
+                        <h3>ПРИКЛЮЧЕНИЯ ШАРИКА</h3>
+                        <p>Мультсериал рассказывает о приключениях щенка Шарика и его друзей. Присоединяйтесь к ним и узнавайте все занимательные и забавные истории через которые проходит  компания зверюшек.</p>
+                    </div>
+                    <div id="itemThree" class="slider">
+                        <img src="img/slider/firstpic.png">
+                        <h3>ПРИКЛЮЧЕНИЯ ШАРИКА</h3>
+                        <p>Мультсериал рассказывает о приключениях щенка Шарика и его друзей. Присоединяйтесь к ним и узнавайте все занимательные и забавные истории через которые проходит  компания зверюшек.</p>
+                    </div>
+                    <div id="itemFour" class="slider">
+                        <img src="img/slider/firstpic.png">
+                        <h3>ПРИКЛЮЧЕНИЯ ШАРИКА</h3>
+                        <p>Мультсериал рассказывает о приключениях щенка Шарика и его друзей. Присоединяйтесь к ним и узнавайте все занимательные и забавные истории через которые проходит  компания зверюшек.</p>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div id="navLinks">
+                <ul>
+                    <li class="itemLinks" data-pos="0px"></li>
+                    <li class="itemLinks" data-pos="-920px"></li>
+                    <li class="itemLinks" data-pos="-1840px"></li>
+                    <li class="itemLinks" data-pos="-2760px"></li>
+                </ul>
+            </div>
         </div>
+    </div>
+    <div class="container lowerscreen">
+        <h2><p class="txt_orange">СВЯЖИТЕСЬ С</p><div class="txt_white">НАМИ</div></h2>
+        <form>
+            <input type="text" id="name" required placeholder="Ваше имя">
+            <input type="email" id="email" required placeholder="Ваш email">
+            <textarea id="message" placeholder="Ваше сообщение"></textarea>
+            <button type="submit">ОТПРАВИТЬ</button>
+        </form>
     </div>
     </main>
     <script src="js/script.js" defer></script>  
