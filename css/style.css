@@ -325,6 +325,8 @@ textarea{
     background: var(--main-color);
     transition: .4s linear;
     padding: 10px 90px;
+    border: none;
+    color: white;
  }
  .action-btn:after {
     content: "";
