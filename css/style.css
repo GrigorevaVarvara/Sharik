@@ -163,7 +163,7 @@ footer ul{
 }
 
 .about{
-    width: 700px;
+    width: 58%;
 
     display: flex;
     flex-direction: column;
@@ -244,6 +244,10 @@ footer ul{
     
 }
 
+.lilslider{
+    visibility: hidden;
+}
+
 #navLinks {
     margin: 10px;
     text-align: center;
@@ -289,27 +293,27 @@ form {
 }
 
 input{
-    width: 730px;
+    width: 60%;
     height: 70px;
     margin: 20px;
 
     border: none;
     background: var(--light-orange);
     border-radius: 65px;
-    padding-left: 95px;
+    padding-left: 7%;
     color: var(--dark-purple);
     font-size: 1.2rem;
 }
 
 textarea{
-    width: 730px;
+    width: 60%;
     height: 320px;
     margin: 20px;
 
     border: none;
     background: var(--light-orange);
     border-radius: 65px;
-    padding-left: 95px;
+    padding-left: 7%;
     padding-top: 25px;
     color: var(--dark-purple);
     font-size: 1.2rem;
@@ -384,6 +388,29 @@ footer{
     .content{
         flex-direction: column;
     }
+    
+    .bigslider{
+        visibility: hidden;
+    }
+
+    .lilslider{
+        visibility: visible;
+    }
+    
+    .slider {
+        width: 400px;
+        height: 260px;
+    }
+    
+    #sliderContainer {
+        width: 400px;
+        height: 260px;
+        padding: 20px;
+    }
+
+    .slider img{
+        width: 200px;
+    }
 }
 
 button.burger{
@@ -423,7 +450,7 @@ button.burger.open .line-3{
     }
     header ul{
         top: 100px;
-        left: 150px;
+        right: 10px;
         position: absolute;
         flex-direction: column;
         align-items: flex-start;
@@ -450,12 +477,29 @@ button.burger.open .line-3{
         display: flex;
         background: transparent;
     }
-    header ul li a.active{
-        border: none;
-        background: none;
-        padding: 0;
+    
+
+    .content-center{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
     }
-    input[type=text]{
-        padding: 18px 20px;
+
+    .shar{
+        background-image: none;
+    }
+
+    .arrow{
+        transform: rotate(90deg);
+    }
+
+    .content-right img{
+        width: 400px;
+    }
+    
+    
+
+    footer{
+        background-position: center;
     }
 }
