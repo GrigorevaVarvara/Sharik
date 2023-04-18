@@ -1,7 +1,7 @@
 @import url(https://allfont.ru/allfont.css?fonts=franklin-gothic-medium-cond);
 
 :root{
-    font-size: 20px;
+    font-size: 18px;
     --main-color: #E94E1B;
     --dark-purple: #261334;
     --light-orange:#EFCEB6;
@@ -246,6 +246,7 @@ footer ul{
 
 .lilslider{
     visibility: hidden;
+    
 }
 
 #navLinks {
@@ -391,6 +392,7 @@ footer{
     
     .bigslider{
         visibility: hidden;
+        height: 0px;
     }
 
     .lilslider{
@@ -501,5 +503,11 @@ button.burger.open .line-3{
 
     footer{
         background-position: center;
+    }
+
+    .social ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
